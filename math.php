@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>PHP Math</title>
 </head>
 <body>
 <?php
@@ -28,8 +28,6 @@ $number1 = 24;
 $number2 = 32;
 echo $number1 * $number2;
 echo "<br>";
-
-
 ?>
 </body>
 </html>
