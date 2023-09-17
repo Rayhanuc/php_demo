@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP OOP Instantiate a Class</title>
+    <title>PHP OOP Class inheritance</title>
 </head>
 <body>
 <?php
-//73. Class inheritance
+// **** 73. Class inheritance
 class Car {
     var $wheels = 4;
     var $hood = 1;
@@ -24,13 +24,19 @@ class Car {
 }
 
 $bmw = new Car();
-$truck = new Car();
-//$bmw->moveWheels();
-//$bmw->wheels = 8;
-echo "Bmw wheels are ".$bmw->wheels . "<br>";
-echo "Truck wheels are ".$truck->wheels = 10 . "<br>";
-$truck->CreateDoors();
-echo "Truck doors are ".$truck->doors;
+class Plane extends Car {
+    var $wheels = 35;
+}
+
+$jet = new Plane();
+//$jet->moveWheels();
+$wheels = $jet->wheels;
+echo "<h1>Total Wheels: ".$wheels."</h1>";
+//if(class_exists("Plane")) {
+//    echo "it does exist";
+//}
+
+
 ?>
 </body>
 </html>
